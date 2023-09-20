@@ -37,7 +37,7 @@ class TestApp:
     def test_count_route(self):
         '''has a resource available at "/count/<parameter>".'''
         response = app.test_client().get('/count/5')
-        assert(response.status_code == 200)
+        assert(response.status_code == 200) 
 
     def test_count_range_10(self):
         '''counts through range of parameter in "/count/<parameter" on separate lines.'''
